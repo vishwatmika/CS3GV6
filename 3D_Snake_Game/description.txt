@@ -1,0 +1,25 @@
+Assignment: 1: Computer Graphics
+
+ The program is implemented in C++ using OpenGL. Main libraries used
+are: GLUT (for graphics creation) and SOIL-Simple OpenGL Image Library
+(For Textures).
+ A mesh is created using glut functions, and some textures were given.
+ Keyboard and mouse both are used for translation (of the bigger box for
+moving around the screen) as well as changing camera view (lookAt()
+function).
+ The Grid has one-to-one relationship with both the cubes, whereas the
+cubes moves on their own without affecting each other.
+ The whole scene is lit from 10th coordinate in the Y-direction using the
+glLightfv() function. Ambient and Diffuse intensities of light are also
+considered using the same function.
+ Viewports and perspective projections are used so that the models fits
+the view, when the user resizes the window.
+ Camera Positions can be changed using both the keyboard and mouse. If
+
+the user scrolls the mouse up or down, the camera shifts in the Y-
+direction. When the user presses the PGUP/PGDWN keys, the view changes
+
+in X-direction and pressing the HOME/Insert keys transforms the z-
+direction.
+
+ The basic idea was to implement a 3D snake game.
